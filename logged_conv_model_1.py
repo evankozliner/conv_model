@@ -101,7 +101,7 @@ def main():
         writer = csv.writer(output_file)
         total_batch = int(X_test.shape[0] / batch_size)
         for i in range(total_batch):
-            batch_xs, batch_ys = helpers.get_next_batch(i, X, Y, batch_size)
+            batch_xs, batch_ys = helpers.get_next_batch(i, X_test, Y_test, batch_size)
             _, c,prediction = sess.run([optimizer, cost,pred], 
                     feed_dict={x: batch_xs, y: batch_ys, keep_prob: 1.0})
             for i in range(prediction.shape[0]):
