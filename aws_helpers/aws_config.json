@@ -1,5 +1,5 @@
 {
-	"instance-name": "DeepLearningAMI",
+	"instance-name": "P2",
 	"region": "us-west-2",
 	"access-environment-var": "AWS_ACCESS_KEY_ID",
 	"secret-environment-var":"AWS_SECRET_ACCESS_KEY",
